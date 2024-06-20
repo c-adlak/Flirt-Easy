@@ -1,0 +1,19 @@
+{
+  "employee": [
+    {
+      "name": "chandan",
+      "location": "bhopal",
+      "id": "1"
+    },
+    {
+      "name": "ram",
+      "location": "ayodhya",
+      "id": "2"
+    },
+    {
+      "name": "krishna",
+      "location": "nanaraj",
+      "id": "3"
+    }
+  ]
+}

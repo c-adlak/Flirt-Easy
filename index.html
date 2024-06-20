@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .detailscontainer {
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
+      }
+    </style>
+  </head>
+  <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    <div class="w-full h-screen bg-black font-['helvetica_now_display']">
+      <div class="imagecontainer w-full h-screen relative overflow-hidden">
+        <div
+          class="maincard z-[3] w-[130%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 absolute h-[130%]"
+        >
+          <img class="w-full h-full object-cover" src="" alt="" />
+        </div>
+        <div
+          class="incomingcard z-[2] w-[130%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 absolute h-[130%]"
+        >
+          <img class="w-full h-full object-cover" src="" alt="" />
+        </div>
+      </div>
+      <div
+        class="absolute top-0 left-0 z-[4] w-full h-screen flex flex-col justify-between"
+      >
+        <div
+          class="navbar flex justify-between text-white item-center px-5 py-6"
+        >
+          <div class="prflimg w-[3rem] h-[3rem] rounded-full overflow-hidden">
+            <img class="w-full h-full object-cover" src="" alt="" />
+          </div>
+          <h3 class="text-2xl font-medium tracking -tighter">They liked you</h3>
+          <div
+            class="chaticon relative rounded-full flex items-center justify-center w-[3rem] h-[3rem] bg-white/20"
+          >
+            <i
+              class="opacity-80 fa-solid fa-comments"
+              style="color: #f7f7f7"
+            ></i>
+            <div
+              class="badge flex items-center justify-center rounded-full top-0 right-0 -translate-y-[5px] -translate-x-[3px] absolute w-5 h-5 bg-[#FC5149]"
+            >
+              <h5 class="text-[13px] font-[500]">5</h5>
+            </div>
+          </div>
+        </div>
+        <div class="detailscontainer w-full">
+          <div class="details w-full px-5 py-6">
+            <div class="element location flex gap-4">
+              <i
+                class="w-[1.6rem] h-[1.6rem] rounded-full flex items-center font-[700] justify-center bg-white fa-solid fa-arrow-turn-up"
+                style="color: #000000"
+              ></i>
+              <h3 class="text-white">USA, California</h3>
+            </div>
+            <div class="element name flex gap-5 text-white mt-1">
+              <h1 class="font-regular tracking-tighter text-7xl">Victoria</h1>
+              <h1 class="font-regular tracking-tighter text-7xl opacity-60">
+                20
+              </h1>
+            </div>
+            <div class="element tags flex gap-3 text-white mt-4"></div>
+            <div class="element bio text-white/80 mt-5">
+              <h3 class="text-xl">Bio</h3>
+              <p class="text-lg mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                perferendis ex sint.
+              </p>
+            </div>
+            <div class="element flex items-start mt-10 gap-1">
+              <button class="deny py-3 rounded-xl w-1/2 bg-white">
+                <i
+                  class="font-semibold fa-solid fa-xmark fa-xl"
+                  style="color: #000000"
+                ></i>
+              </button>
+              <button class="accept py-3 rounded-xl w-1/2 bg-[#FC5149]">
+                <i class="fa-solid fa-heart fa-xl" style="color: #ffffff"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let arr = [
+      //   { name: "chandan ", age: 5, location: "bhopal" },
+      //   { name: "ram ", age: 24, location: "ayodhya" },
+      //   { name: "cha", age: 5, location: "bhopal" },
+      //   { name: "sdhflsh ", age: 24, location: "ayodhya" },
+      //   { name: "dfdh ", age: 5, location: "bhopal" },
+      //   { name: "ksh ", age: 24, location: "ayodhya" },
+      // ];
+
+      // let a = arr.map((e) => {
+      //   console.log(e.name);
+      // });
+      // console.log(a);
+      // let b = arr.filter((e) => {
+      //   return e.age > 5;
+      // });
+      // console.log(b);
+
+      (async function fet() {
+        let a = await fetch("http://localhost:3000/employee");
+        let b = await a.json();
+        console.log(
+          b.map((e) => {
+            return e;
+          })
+        );
+      })();
+    </script>
+  </body>
+</html>
